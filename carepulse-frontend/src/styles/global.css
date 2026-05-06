@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+  
+  h1 {
+    @apply text-[32px] font-bold leading-[40px] tracking-[-0.02em];
+  }
+  
+  h2 {
+    @apply text-[24px] font-semibold leading-[32px] tracking-[-0.01em];
+  }
+  
+  h3 {
+    @apply text-[20px] font-semibold leading-[28px];
+  }
+}
+
+@layer components {
+  /* Minimalist standard layout */
+  .layout-container {
+    @apply max-w-[1440px] mx-auto px-page w-full;
+  }
+}
